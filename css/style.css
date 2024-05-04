@@ -341,7 +341,7 @@ body {
 /* <------------------TRADITIONAL--------------------> */
 
 .traditional {
-  padding: 84px 30px;
+  padding: 84px 27px 84px 30px;
   background-color: #fff;
 }
 .traditional-text {
@@ -366,12 +366,212 @@ body {
   letter-spacing: 0.05em;
   color: #303030;
   width: 100%;
+  margin-bottom: 20px;
 }
 .traditional-description {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.66667;
+  letter-spacing: 0.02em;
+  color: #555;
+  margin-bottom: 44px;
+  width: 418px;
 }
 .traditional-list {
+  display: flex;
+  flex-wrap: wrap;
 }
 .traditional-item {
+  width: 193px;
+  height: 133px;
+  padding: 20px 35px;
+  background-color: #f7f7f7;
+}
+.traditional-item:nth-child(odd) {
+  margin-right: 30px;
+}
+.traditional-item:nth-child(even) {
+  margin-top: 35px;
+}
+.traditional-item > span {
+  font-weight: 700;
+  font-size: 42px;
+  letter-spacing: 0.05em;
+  display: block;
+  text-align: center;
+  color: #303030;
+  margin-bottom: 6px;
+}
+.traditional-item > span::after {
+  content: "+";
+  font-weight: 600;
+  font-size: 16px;
+  text-align: center;
+  color: transparent;
+  vertical-align: top;
+  text-shadow: 0 9px 0 #ff6c00;
 }
 .traditional-item-text {
+  font-weight: 600;
+  font-size: 11px;
+  text-align: center;
+  color: #303030;
+}
+
+/* <------------------BARBERS--------------------> */
+
+.barbers {
+  padding: 84px 30px;
+  background: #f7f7f7;
+}
+.barbers-text {
+  font-weight: 600;
+  font-size: 11px;
+  text-transform: uppercase;
+  color: #303030;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.barbers-text::before {
+  content: "";
+  width: 60px;
+  height: 1px;
+  background-color: #303030;
+  margin-right: 20px;
+}
+.barbers-title {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 42px;
+  letter-spacing: 0.05em;
+  color: #303030;
+  margin-bottom: 44px;
+}
+.barbers-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 64px;
+}
+.barbers-item {
+}
+.barbers-name {
+  font-weight: 400;
+  font-size: 18px;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: #303030;
+  margin-top: 30px;
+  margin-bottom: 8px;
+}
+.barbers-position {
+  font-weight: 400;
+  font-size: 14px;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: #ff6c00;
+  margin-bottom: 30px;
+}
+.barbers-sotial-list {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+.barbers-sotial-item {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.barbers-sotial-item-link {
+}
+.barbers-sotial-icon {
+  fill: #303030;
+}
+.barbers-sotial-icon:hover,
+.barbers-sotial-icon:focus {
+  fill: #ff6c00;
+}
+
+/* <------------------GALLERY--------------------> */
+
+.gallery {
+  padding: 84px 30px;
+  background-color: #fff;
+}
+.gallery-title {
+  font-weight: 600;
+  font-size: 11px;
+  text-transform: uppercase;
+  color: #303030;
+  display: flex;
+  align-items: center;
+  margin-bottom: 71px;
+}
+.gallery-title::before {
+  content: "";
+  width: 60px;
+  height: 1px;
+  background-color: #303030;
+  margin-right: 20px;
+}
+.gallery-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.gallery-item {
+}
+.gallery-item-img {
+}
+
+/* <------------------ONLINE BOOKING--------------------> */
+
+.online-booking {
+  padding: 84px 30px;
+  background-color: #191c26;
+}
+.online-booking-title {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 42px;
+  letter-spacing: 0.05em;
+  text-align: center;
+  color: #fff;
+}
+.online-booking-form {
+  display: flex;
+  flex-direction: column;
+  gap: 44px;
+}
+.online-booking-form input[type="text"],
+.online-booking-form input[type="tel"] {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid rgba(157, 164, 189, 0.4);
+  padding: 10px 0;
+  font-size: 16px;
+  color: #333;
+}
+.online-booking-form input[type="text"]::placeholder,
+.online-booking-form input[type="tel"]::placeholder {
+  font-weight: 600;
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: rgba(157, 164, 189, 0.4);
+}
+.online-booking-button {
+  margin-top: 44px;
+  color: #fff;
+}
+.online-booking-button:hover,
+.online-booking-button:focus {
+  background-color: #ff6c00;
+}
+.button {
 }
