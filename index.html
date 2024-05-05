@@ -36,31 +36,53 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300..800&family=Raleway:wght@700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css" integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+      integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
 
   <body>
     <header class="header container">
       <nav class="header-nav">
         <a href="#">
-          <img class="logo-icon" src="/images/icons/logo.svg" alt="Barber Shop logo" width="68.93" height="55.46" />
+          <svg class="header-logo" width="68.93" height="55.46">
+            <use href="/images/icons/sprite.svg#icon-logo"></use>
+          </svg>
         </a>
 
         <ul class="header-nav-list">
-          <li class="header-nav-item"><a class="header-link" href="#">About</a></li>
-          <li class="header-nav-item"><a class="header-link" href="#">Services and prices</a></li>
-          <li class="header-nav-item"><a class="header-link" href="#">Barbers</a></li>
-          <li class="header-nav-item"><a class="header-link" href="#">Contacts</a></li>
+          <li class="header-nav-item">
+            <a class="header-link" href="#">About</a>
+          </li>
+          <li class="header-nav-item">
+            <a class="header-link" href="#">Services and prices</a>
+          </li>
+          <li class="header-nav-item">
+            <a class="header-link" href="#">Barbers</a>
+          </li>
+          <li class="header-nav-item">
+            <a class="header-link" href="#">Contacts</a>
+          </li>
         </ul>
       </nav>
 
       <address class="header-address">
-        <a class="header-address-link" href="tel:+380441111111">+38 044 111 11 11</a>
+        <a class="header-address-link" href="tel:+380441111111"
+          >+38 044 111 11 11</a
+        >
       </address>
 
       <button class="header-button" type="button">Online-booking</button>
 
-      <button class="menu-button" type="button"><img class="menu-icon" src="/images/icons/menu.svg" alt="menu icon" width="24" height="24"></img></button>
+      <button class="menu-button" type="button">
+        <svg class="menu-icon" width="40" height="40">
+          <use href="./images/icons/sprite.svg#icon-menu"></use>
+        </svg>
+      </button>
     </header>
 
     <main>
@@ -83,13 +105,14 @@
             >
           </li>
         </ul>
+
         <div class="hero-wrap">
-        <p class="hero-slogan">A hair salon for men in Kyiv</p>
-        <h1 class="hero-title">BarberShop</h1>
-        <p class="hero-text">
-          We are experts in trendy men’s haircuts. We work quickly, carefully
-          and with style.
-        </p>
+          <p class="hero-slogan">A hair salon for men in Kyiv</p>
+          <h1 class="hero-title">BarberShop</h1>
+          <p class="hero-text">
+            We are experts in trendy men’s haircuts. We work quickly, carefully
+            and with style.
+          </p>
         </div>
       </section>
 
@@ -124,50 +147,56 @@
           same wave" with clients. Therefore, we are always ready to improve
           everyone who comes to us!
         </p>
-        <button class="about-us-button button" type="button">Online-booking</button>
+
+        <button class="about-us-button button" type="button">
+          Online-booking
+        </button>
       </section>
 
       <section class="services container">
         <p class="services-text">Spend your time with the best masters</p>
 
         <h2 class="services-title">Services and prices</h2>
-<div class="services-wrap">
-        <ul class="services-list">
-          <li class="services-item">
-            <p class="services-item-title">Men’s haircut</p>
-            <p class="services-item-price">from 300 uah.</p>
-          </li>
-          <li class="services-item">
-            <p class="services-item-title">Beard trim</p>
-            <p class="services-item-price">from 200 uah.</p>
-          </li>
-          <li class="services-item">
-            <p class="services-item-title">Mustache trim</p>
-            <p class="services-item-price">from 200 uah.</p>
-          </li>
-          <li class="services-item">
-            <p class="services-item-title">Straight razor shave</p>
-            <p class="services-item-price">from 200 uah.</p>
-          </li>
-          <li class="services-item">
-            <p class="services-item-title">Trainee’s haircut</p>
-            <p class="services-item-price">from 50 uah.</p>
-          </li>
-          <li class="services-item">
-            <p class="services-item-title">Haircut under the nozzle</p>
-            <p class="services-item-price">from 200 uah.</p>
-          </li>
-          <li class="services-item">
-            <p class="services-item-title">Children’s haircut (0-12 y.o.)</p>
-            <p class="services-item-price">from 300 uah.</p>
-          </li>
-          <li class="services-item">
-            <p class="services-item-title">Camouflage of grey hair</p>
-            <p class="services-item-price">from 200 uah.</p>
-          </li>
-        </ul>
-</div>
-        <button class="services-button button" type="button">Online-booking</button>
+        <div class="services-wrap">
+          <ul class="services-list">
+            <li class="services-item">
+              <p class="services-item-title">Men’s haircut</p>
+              <p class="services-item-price">from 300 uah.</p>
+            </li>
+            <li class="services-item">
+              <p class="services-item-title">Beard trim</p>
+              <p class="services-item-price">from 200 uah.</p>
+            </li>
+            <li class="services-item">
+              <p class="services-item-title">Mustache trim</p>
+              <p class="services-item-price">from 200 uah.</p>
+            </li>
+            <li class="services-item">
+              <p class="services-item-title">Straight razor shave</p>
+              <p class="services-item-price">from 200 uah.</p>
+            </li>
+            <li class="services-item">
+              <p class="services-item-title">Trainee’s haircut</p>
+              <p class="services-item-price">from 50 uah.</p>
+            </li>
+            <li class="services-item">
+              <p class="services-item-title">Haircut under the nozzle</p>
+              <p class="services-item-price">from 200 uah.</p>
+            </li>
+            <li class="services-item">
+              <p class="services-item-title">Children’s haircut (0-12 y.o.)</p>
+              <p class="services-item-price">from 300 uah.</p>
+            </li>
+            <li class="services-item">
+              <p class="services-item-title">Camouflage of grey hair</p>
+              <p class="services-item-price">from 200 uah.</p>
+            </li>
+          </ul>
+        </div>
+
+        <button class="services-button button" type="button">
+          Online-booking
+        </button>
       </section>
 
       <section class="traditional container">
@@ -196,7 +225,6 @@
             <p class="traditional-item-text">Gifts for regular customers</p>
           </li>
         </ul>
-        
       </section>
 
       <section class="barbers container">
@@ -216,24 +244,53 @@
             <div>
               <ul class="barbers-sotial-list">
                 <li class="barbers-sotial-item">
-                  <a class="barbers-sotial-item-link" href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer nofollow"><img class="barbers-sotial-icon" src="/images/icons/instagram.svg" alt="Instagram" width="20" height="20">
+                  <a
+                    class="barbers-sotial-item-link"
+                    href="https://www.instagram.com/"
+                    target="_blank"
+                    rel="noopener noreferrer nofollow"
+                  >
+                    <svg class="barbers-sotial-icon" width="20" height="20">
+                      <use href="/images/icons/sprite.svg#icon-instagram"></use>
+                    </svg>
                   </a>
                 </li>
                 <li class="barbers-sotial-item">
-                  <a class="barbers-sotial-item-link" href="https://www.twitter.com/" target="_blank" rel="noopener noreferrer nofollow"><img class="barbers-sotial-icon" src="/images/icons/twitter.svg" alt="Twitter" width="20" height="20">
+                  <a
+                    class="barbers-sotial-item-link"
+                    href="https://www.twitter.com/"
+                    target="_blank"
+                    rel="noopener noreferrer nofollow"
+                  >
+                    <svg class="barbers-sotial-icon" width="20" height="20">
+                      <use href="/images/icons/sprite.svg#icon-twitter"></use>
+                    </svg>
                   </a>
                 </li>
                 <li class="barbers-sotial-item">
-                  <a class="barbers-sotial-item-link" href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer nofollow"><img class="barbers-sotial-icon" src="/images/icons/facebook.svg" alt="Facebook" width="20" height="20">
+                  <a
+                    class="barbers-sotial-item-link"
+                    href="https://www.facebook.com/"
+                    target="_blank"
+                    rel="noopener noreferrer nofollow"
+                    ><svg class="barbers-sotial-icon" width="20" height="20">
+                      <use href="/images/icons/sprite.svg#icon-facebook"></use>
+                    </svg>
                   </a>
                 </li>
                 <li class="barbers-sotial-item">
-                  <a class="barbers-sotial-item-link" href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer nofollow"><img class="barbers-sotial-icon" src="/images/icons/linkedin.svg" alt="Linkedin" width="20" height="20">
+                  <a
+                    class="barbers-sotial-item-link"
+                    href="https://www.linkedin.com/"
+                    target="_blank"
+                    rel="noopener noreferrer nofollow"
+                    ><svg class="barbers-sotial-icon" width="20" height="20">
+                      <use href="/images/icons/sprite.svg#icon-linkedin"></use>
+                    </svg>
                   </a>
                 </li>
               </ul>
             </div>
-
           </li>
           <li class="barbers-item">
             <img
@@ -248,24 +305,53 @@
             <div>
               <ul class="barbers-sotial-list">
                 <li class="barbers-sotial-item">
-                  <a class="barbers-sotial-item-link" href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer nofollow"><img class="barbers-sotial-icon" src="/images/icons/instagram.svg" alt="Instagram" width="20" height="20">
+                  <a
+                    class="barbers-sotial-item-link"
+                    href="https://www.instagram.com/"
+                    target="_blank"
+                    rel="noopener noreferrer nofollow"
+                  >
+                    <svg class="barbers-sotial-icon" width="20" height="20">
+                      <use href="/images/icons/sprite.svg#icon-instagram"></use>
+                    </svg>
                   </a>
                 </li>
                 <li class="barbers-sotial-item">
-                  <a class="barbers-sotial-item-link" href="https://www.twitter.com/" target="_blank" rel="noopener noreferrer nofollow"><img class="barbers-sotial-icon" src="/images/icons/twitter.svg" alt="Twitter" width="20" height="20">
+                  <a
+                    class="barbers-sotial-item-link"
+                    href="https://www.twitter.com/"
+                    target="_blank"
+                    rel="noopener noreferrer nofollow"
+                  >
+                    <svg class="barbers-sotial-icon" width="20" height="20">
+                      <use href="/images/icons/sprite.svg#icon-twitter"></use>
+                    </svg>
                   </a>
                 </li>
                 <li class="barbers-sotial-item">
-                  <a class="barbers-sotial-item-link" href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer nofollow"><img class="barbers-sotial-icon" src="/images/icons/facebook.svg" alt="Facebook" width="20" height="20">
+                  <a
+                    class="barbers-sotial-item-link"
+                    href="https://www.facebook.com/"
+                    target="_blank"
+                    rel="noopener noreferrer nofollow"
+                    ><svg class="barbers-sotial-icon" width="20" height="20">
+                      <use href="/images/icons/sprite.svg#icon-facebook"></use>
+                    </svg>
                   </a>
                 </li>
                 <li class="barbers-sotial-item">
-                  <a class="barbers-sotial-item-link" href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer nofollow"><img class="barbers-sotial-icon" src="/images/icons/linkedin.svg" alt="Linkedin" width="20" height="20">
+                  <a
+                    class="barbers-sotial-item-link"
+                    href="https://www.linkedin.com/"
+                    target="_blank"
+                    rel="noopener noreferrer nofollow"
+                    ><svg class="barbers-sotial-icon" width="20" height="20">
+                      <use href="/images/icons/sprite.svg#icon-linkedin"></use>
+                    </svg>
                   </a>
                 </li>
               </ul>
             </div>
-
           </li>
           <li class="barbers-item">
             <img
@@ -280,33 +366,63 @@
             <div>
               <ul class="barbers-sotial-list">
                 <li class="barbers-sotial-item">
-                  <a class="barbers-sotial-item-link" href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer nofollow"><img class="barbers-sotial-icon" src="/images/icons/instagram.svg" alt="Instagram" width="20" height="20">
+                  <a
+                    class="barbers-sotial-item-link"
+                    href="https://www.instagram.com/"
+                    target="_blank"
+                    rel="noopener noreferrer nofollow"
+                  >
+                    <svg class="barbers-sotial-icon" width="20" height="20">
+                      <use href="/images/icons/sprite.svg#icon-instagram"></use>
+                    </svg>
                   </a>
                 </li>
                 <li class="barbers-sotial-item">
-                  <a class="barbers-sotial-item-link" href="https://www.twitter.com/" target="_blank" rel="noopener noreferrer nofollow"><img class="barbers-sotial-icon" src="/images/icons/twitter.svg" alt="Twitter" width="20" height="20">
+                  <a
+                    class="barbers-sotial-item-link"
+                    href="https://www.twitter.com/"
+                    target="_blank"
+                    rel="noopener noreferrer nofollow"
+                  >
+                    <svg class="barbers-sotial-icon" width="20" height="20">
+                      <use href="/images/icons/sprite.svg#icon-twitter"></use>
+                    </svg>
                   </a>
                 </li>
                 <li class="barbers-sotial-item">
-                  <a class="barbers-sotial-item-link" href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer nofollow"><img class="barbers-sotial-icon" src="/images/icons/facebook.svg" alt="Facebook" width="20" height="20">
+                  <a
+                    class="barbers-sotial-item-link"
+                    href="https://www.facebook.com/"
+                    target="_blank"
+                    rel="noopener noreferrer nofollow"
+                    ><svg class="barbers-sotial-icon" width="20" height="20">
+                      <use href="/images/icons/sprite.svg#icon-facebook"></use>
+                    </svg>
                   </a>
                 </li>
                 <li class="barbers-sotial-item">
-                  <a class="barbers-sotial-item-link" href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer nofollow"><img class="barbers-sotial-icon" src="/images/icons/linkedin.svg" alt="Linkedin" width="20" height="20">
+                  <a
+                    class="barbers-sotial-item-link"
+                    href="https://www.linkedin.com/"
+                    target="_blank"
+                    rel="noopener noreferrer nofollow"
+                    ><svg class="barbers-sotial-icon" width="20" height="20">
+                      <use href="/images/icons/sprite.svg#icon-linkedin"></use>
+                    </svg>
                   </a>
                 </li>
               </ul>
             </div>
-            
           </li>
         </ul>
       </section>
 
-      <section class="gallery container" >
+      <section class="gallery container">
         <p class="gallery-title">In Latin, "barba" means "beard"</p>
         <ul class="gallery-list">
           <li class="gallery-item">
-            <img class="gallery-item-img"
+            <img
+              class="gallery-item-img"
               src="/images/gallery/gallery-1-mob-1x.jpg"
               alt="The barber shaves the client's beard"
               width="418"
@@ -314,7 +430,8 @@
             />
           </li>
           <li class="gallery-item">
-            <img class="gallery-item-img"
+            <img
+              class="gallery-item-img"
               src="/images/gallery/gallery-2-mob-1x.jpg"
               alt="Barber cuts client's hair"
               width="418"
@@ -322,7 +439,8 @@
             />
           </li>
           <li class="gallery-item">
-            <img class="gallery-item-img"
+            <img
+              class="gallery-item-img"
               src="/images/gallery/gallery-3-mob-1x.jpg"
               alt="The barber applies a razor to the client's face after shaving"
               width="418"
@@ -330,7 +448,8 @@
             />
           </li>
           <li class="gallery-item">
-            <img class="gallery-item-img"
+            <img
+              class="gallery-item-img"
               src="/images/gallery/gallery-4-mob-1x.jpg"
               alt="The barber straightens the client's hair with a razor"
               width="418"
@@ -343,38 +462,72 @@
       <section class="online-booking container">
         <h2 class="online-booking-title">Online-booking</h2>
         <form class="online-booking-form">
-        <input type="text" name="name" placeholder="Name*" required />
-        <input type="tel" name="phone" placeholder="Phone*" required />
-        <input type="text" name="message" placeholder="Message" />
+          <input
+            class="online-booking-input"
+            type="text"
+            name="name"
+            placeholder="Name*"
+            required
+          />
+          <input
+            class="online-booking-input"
+            type="tel"
+            name="phone"
+            placeholder="Phone*"
+            required
+          />
+          <input
+            class="online-booking-input message"
+            type="text"
+            name="message"
+            placeholder="Message"
+          />
         </form>
 
         <button class="online-booking-button button" type="button">Send</button>
       </section>
 
-      <!-- <section class="contacts">
-        <h2>Contacts</h2>
-        <address>
-          <ul>
-            <li>
+      <section class="contacts container">
+        <h2 class="contacts-title">Contacts</h2>
+        <address class="contacts-address">
+          <ul class="contacts-list">
+            <li class="contacts-item address">
+              <svg class="contacts-icon" width="24" height="24">
+                <use href="/images/icons/sprite.svg#icon-map"></use>
+              </svg>
               <a
+                class="contacts-link"
                 href="http://maps.google.com/maps?q=st.%20Vasilkovaya,%207A%20Kiev,%2008132"
                 target="_blank"
                 >st. Vasilkovaya, 7A Kiev, 08132</a
               >
             </li>
-            <li>
-              <a href="tel:+380441111111">+38 044 111 11 11</a>
+            <li class="contacts-item phone">
+              <svg class="contacts-icon" width="24" height="24">
+                <use href="/images/icons/sprite.svg#icon-phone"></use>
+              </svg>
+              <a class="contacts-link" href="tel:+380441111111"
+                >+38 044 111 11 11</a
+              >
             </li>
-            <li>
-              <a href="mailto:barbershop@email.com">barbershop@email.com</a>
+            <li class="contacts-item email">
+              <svg class="contacts-icon" width="24" height="24">
+                <use href="/images/icons/sprite.svg#icon-email"></use>
+              </svg>
+              <a class="contacts-link" href="mailto:barbershop@email.com"
+                >barbershop@email.com</a
+              >
             </li>
           </ul>
         </address>
-      </section> -->
+        <p class="contacts-text">Working hours</p>
+        <p class="contacts-subtext">Every day from 9:00 to 22:00</p>
+      </section>
     </main>
-    <!-- <footer>
-      <ul>
-        <li>
+
+    <footer class="footer container">
+      <ul class="footer-sotial-list">
+        <li class="footer-sotial-item">
           <a
             href="https://www.instagram.com/"
             target="_blank"
@@ -382,7 +535,7 @@
             >Instagram</a
           >
         </li>
-        <li>
+        <li class="footer-sotial-item">
           <a
             href="https://www.youtube.com/"
             target="_blank"
@@ -391,7 +544,13 @@
           >
         </li>
       </ul>
-      <p>&copy; Copyright 2020</p>
-    </footer> -->
+
+      <div class="footer-wrap">
+        <svg class="footer-icon" width="12" height="12">
+          <use href="/images/icons/sprite.svg#icon-copylock"></use>
+        </svg>
+        <p class="footer-text">Copyright 2020</p>
+      </div>
+    </footer>
   </body>
 </html>
