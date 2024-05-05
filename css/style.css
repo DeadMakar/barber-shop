@@ -45,6 +45,21 @@ select {
 body {
   font-family: "Open Sans", sans-serif;
 }
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+.no-scroll {
+  overflow: hidden;
+}
 .button {
   cursor: pointer;
   border: 1px solid #ff6c00;
@@ -70,6 +85,105 @@ body {
 .container {
   max-width: 480px;
   margin: 0 auto;
+}
+
+/*** <------------------MODAL--------------------> ***/
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 9999;
+}
+.modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 337px;
+  background-color: #fff;
+  padding: 118px 30px 100px 40px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  overflow-y: auto;
+}
+.modal-close-button {
+  position: fixed;
+  top: 48px;
+  right: 30px;
+  width: 40px;
+  height: 40px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+.modal-icon {
+}
+.modal-nav {
+}
+.modal-nav-list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-bottom: 64px;
+}
+.modal-nav-item {
+  font-weight: 600;
+  font-size: 18px;
+  letter-spacing: 0.1em;
+  color: #303030;
+  cursor: pointer;
+}
+.modal-nav-item:hover,
+.modal-nav-item:focus {
+  color: #ff6c00;
+}
+.modal-link {
+}
+.modal-address {
+  font-weight: 600;
+  font-size: 18px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #303030;
+  margin-bottom: 20px;
+}
+.modal-address:hover,
+.modal-address:focus {
+  color: #ff6c00;
+}
+.modal-address-link {
+}
+.modal-button {
+}
+.button {
+}
+.modal-sotial-list {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+  margin-top: 70px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.modal-sotial-list::before {
+  content: "";
+  width: 60px;
+  height: 1px;
+  background-color: #303030;
+  margin-bottom: 20px;
+}
+.modal-sotial-item {
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: 0.2em;
+  color: #303030;
+}
+.modal-sotial-item:hover,
+.modal-sotial-item:focus {
+  color: #ff6c00;
 }
 
 /*** <------------------HEADER--------------------> ***/
